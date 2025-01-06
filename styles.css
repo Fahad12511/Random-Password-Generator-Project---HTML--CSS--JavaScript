@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: linear-gradient(135deg, #ffffff, #fcf9f9);
+    color: #fff;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 350px;
+    padding: 20px;
+    background-color: #222;
+    border-radius: 15px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+#main-input {
+    margin: 10px 0;
+    height: 50px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 18px;
+    outline: none;
+    background-color: #444;
+    color: #fff;
+}
+
+h6 {
+    font-size: 18px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #f3f3f3;
+}
+
+input[type="number"] {
+    height: 30px;
+    width: 40px;
+    text-align: center;
+    border: 2px solid #444;
+    border-radius: 5px;
+    outline: none;
+    background-color: #333;
+    color: #fff;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+#item_btn {
+    display: block;
+    margin: 20px auto;
+    height: 50px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: #e63946;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#item_btn:hover {
+    background-color: #d62839;
+}
+
+#item_btn:active {
+    background-color: #a4161a;
+}
+
+.container:hover {
+    transform: scale(1.03);
+    transition: transform 0.3s;
+}
+
+#main-input:focus {
+    border: 2px solid #e63946;
+}
+
+input[type="number"]:focus {
+    border: 2px solid #e63946;
+}
+
+input[type="checkbox"]:hover {
+    transform: scale(1.2);
+}
